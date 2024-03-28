@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #ccc;
+}
+
+main {
+    min-width: 960px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+}
+
+section {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1, section, article {
+    margin-bottom: 1rem;
+}
+
+#botoes {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* botoes */
+button {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.625rem;
+    cursor: pointer;
+}
+
+/* color botao */
+#btlight {
+    background: #ededed;
+    color: #121212;
+}
+#btdark {
+    background-color: #263238;
+    color: #fff;
+}
+#btpink {
+    background-color: rgb(229, 102, 210);
+    color: #121212;
+}
+#btblue {
+    background-color: blue;
+    color: #fff;
+}
+#btyellow {
+    background-color: yellow;
+    color: #121212
+}
+#btlblue {
+    background-color: rgb(54, 147, 224);
+    color: #fff;
+}
+#btgreen {
+    background-color: rgb(25, 165, 34);
+    color: #fff;
+}
+#btred {
+    background-color: red;
+    color: #fff;
+}
+
+/* articles com a class box */
+.box {
+    padding: 0.625rem;
+    border-radius: 8px;
+}
+
+/* Estilos para serem usados via JS */
+.light {
+    background: #fff;
+    color: #191919;
+}
+
+.dark {
+    background: #222;
+    color: #fff;
+}
+
+.blue {
+    background: #1a237e;
+    color: #fff;
+}
+.pink {
+    background-color: rgb(231, 147, 218);
+    color: #191919;
+}
+.lblue {
+    background-color: aqua;
+}
+.green {
+    background-color: rgb(73, 198, 73);
+}
+.red {
+    background-color: rgb(241, 72, 50);
+}
+
+.escura {
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.625rem;
+}
+.yellow {
+    background: #ffc107;
+    color: #fff;
+}
+button {
+    width: 100px;
+}
