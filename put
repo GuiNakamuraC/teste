@@ -1,0 +1,39 @@
+case 'PUT':
+            // Lê os dados enviados no corpo da requisição
+            $dados = json_decode(file_get_contents('php://input'), true);
+
+            // Verifica se o "id" foi passado e se os campos obrigatórios foram preenchidos
+            if (!isset($dados["id"]) || !isset($dados["nome"]) || !isset($dados["email"])) {
+                http_response_code(400);
+                echo json_encode(["erro" => "ID, nome e email são obrigatórios."], JSON_UNESCAPED_UNICODE);
+                exit;
+            }
+
+            $id = $dados["id"];
+            $usuario_encontrado = null;
+
+            // Procura o usuário pelo ID para garantir que ele existe
+            foreach ($usuarios as $index => $usuario) {
+                if ($usuario['id'] == $id) {
+                    // Atualiza os dados do usuário
+                    $usuarios[$index]['nome'] = $dados["nome"];
+                    $usuarios[$index]['email'] = $dados["email"];
+                    $usuario_encontrado = $usuarios[$index];
+                    break;
+                }
+            }
+
+            if ($usuario_encontrado) {
+                // Salva os usuários atualizados no arquivo JSON
+                file_put_contents($arquivo, json_encode($usuarios, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+
+                // Retorna a resposta com os dados atualizados
+                echo json_encode([
+                    "mensagem" => "Usuário atualizado com sucesso!",
+                    "usuario" => $usuario_encontrado
+                ], JSON_UNESCAPED_UNICODE);
+            } else {
+                http_response_code(404);
+                echo json_encode(["erro" => "Usuário não encontrado."], JSON_UNESCAPED_UNICODE);
+            }
+            break;
