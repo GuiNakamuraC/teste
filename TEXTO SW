@@ -1,0 +1,17 @@
+API (Interface de Programação de Aplicação) é um conjunto de definições e protocolos que permite a comunicação entre diferentes componentes de software. Ela acelera o desenvolvimento de novos aplicativos, já que não é necessário criar todas as soluções do zero, já que é possível utilizar APIs prontas para funções padrão. Além disso, as APIs facilitam a integração entre diversos aplicativos e serviços, melhorando o desempenho e experiência do usuário. 
+
+Para a transmissão de dados, existem dois principais meios, o REST (Transferência de Estado Representacional) e o SOAP (Protocolo de Acesso a Objetos Simples). Eles definem como a API é criada, possibilitando a comunicação dos dados entre aplicações web. A principal diferença entre os dois é que o REST é um conjunto de princípios de arquitetura, e o SOAP é um protocolo oficial mantido pela W3C, por isso, possui regras integradas que aumentam sua complexidade e sobrecarga, porém torna-se mais seguro que uma REST. 
+
+Quando uma aplicação ou serviço segue os princípios de uma REST, ela é chamada de RESTful. Ela permite que o usuário interaja com os recursos do servidor usando URLs específicas e métodos HTTP para realizar operações de CRUD. Cada operação está ligada a um método HTTP específico. Os principais métodos são: GET, 
+
+
+
+
+
+AWS. O que é uma API (interface de programação de aplicações)?. [s.d.]. Disponível em: https://aws.amazon.com/pt/what-is/api/. Acesso em: 10 jun. 2025. 
+
+EBAC. O que é uma API: para que serve e como utilizar. 14 set. 2023 Disponível em: https://ebaconline.com.br/blog/o-que-e-uma-api-seo. Acesso em: 10 jun. 2025. 
+
+FERREIRA, Rodrigo. REST: Princípios e boas práticas. 22 out. 2017. Disponível em: https://www.alura.com.br/artigos/rest-principios-e-boas-praticas?utm_term=&utm_campaign=topo-aon-search-gg-dsa-artigos_conteudos&utm_source=google&utm_medium=cpc&campaign_id=11384329873_164240702375_703853654617&utm_id=11384329873_164240702375_703853654617&hsa_acc=7964138385&hsa_cam=topo-aon-search-gg-dsa-artigos_conteudos&hsa_grp=164240702375&hsa_ad=703853654617&hsa_src=g&hsa_tgt=dsa-2276348409543&hsa_kw=&hsa_mt=&hsa_net=google&hsa_ver=3&gad_source=1&gad_campaignid=11384329873&gbraid=0AAAAADpqZIB85DdMrYD6QWxWvTznkEru4&gclid=EAIaIQobChMIwKeU38nmjQMVnkJIAB2OnCdoEAAYAiAAEgJ1uPD_BwE. Acesso em: 10 jun. 2025. 
+
+HAT, Red. REST e SOAP: entenda as diferenças. 24 jan. 2024. https://www.redhat.com/pt-br/topics/integration/whats-the-difference-between-soap-rest. Acesso em: 10 jun. 2025.
