@@ -1,0 +1,30 @@
+int led = 7;
+int botao = 8;
+int valor_botao = 0;
+int estado_botao = 0;
+
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode(botao, INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  valor_botao = digitalRead(botao);
+  Serial.print("Valor do botao: ");
+  Serial.println(valor_botao);
+  if(valor_botao == 1){
+    estado_botao = !estado_botao;
+    delay(200);
+  }
+  
+  if(estado_botao == 1) {
+    digitalWrite(led, HIGH);
+  } else {
+  	digitalWrite(led, LOW);
+  }
+  
+  delay(200);
+}
